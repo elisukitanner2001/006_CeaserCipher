@@ -10,10 +10,10 @@ public class CeaserCipher {
 		String secretText="";
 		int index, keyAdded;
 		
-		System.out.println("test, alpha length = " + alpha.length());
-		System.out.println("test, first char is: " + alpha.charAt(0));
-		System.out.println("test, last char is: " + alpha.charAt(alpha.length()-1));
-		
+		//System.out.println("test, alpha length = " + alpha.length());
+		//System.out.println("test, first char is: " + alpha.charAt(0));
+		//System.out.println("test, last char is: " + alpha.charAt(alpha.length()-1));
+		/*
 		for (int i = 0; i < alpha.length(); i++) {
 			System.out.println(alpha.charAt(i));
 		}
@@ -24,7 +24,7 @@ public class CeaserCipher {
 			System.out.println(plainText.charAt(i));
 		}
 		
-		/*
+		
 		 * each char that I read from plainText I find the index in alpha
 		 * for example, read A look up index for A get 0
 		 *              read M look up index for M get 12
@@ -40,6 +40,7 @@ public class CeaserCipher {
 			//System.out.println("index = " + index);
 			
 			/** Doug's Method **/
+			keyAdded =index + key;
 			keyAdded = (index + key) % alpha.length();
 			
 			/** Will's Method
@@ -52,8 +53,14 @@ public class CeaserCipher {
 				keyAdded-=alpha.length();
 			}
 			**/
-			System.out.println("encoded is " + alpha.charAt(keyAdded));
 			
+			if (keyAdded ==26)
+				keyAdded = 26;
+			
+
+				
+		//	System.out.println("encoded is " + alpha.charAt(keyAdded));
+			secretText += alpha.charAt(keyAdded);
 			
 		}
 		
