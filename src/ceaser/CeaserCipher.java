@@ -6,7 +6,7 @@ public class CeaserCipher {
 	private String alpha = "abcdefghijklmnopqrstuvwxyz 0123456789.:'";
 
 	public String encode(String plainText, int key) {
-		
+
 		String secretText="";
 		int index, keyAdded;
 		
@@ -35,8 +35,16 @@ public class CeaserCipher {
 		 */
 		
 		for (int i=0; i<plainText.length();i++) {
+			if (plainText.charAt(i) !=' ') {
+				index = alpha.indexOf(plainText.charAt(i));	
+				keyAdded = (index + key) % alpha.length();
+				secretText += alpha.charAt(keyAdded);
+			} else {
+				secretText = secretText + "";
+				
+			}
+				
 			
-			index = alpha.indexOf(plainText.charAt(i));
 			//System.out.println("index = " + index);
 			
 			/** Doug's Method **/
@@ -54,8 +62,7 @@ public class CeaserCipher {
 			}
 			**/
 			
-			if (keyAdded ==26)
-				keyAdded = 26;
+		
 			
 
 				
