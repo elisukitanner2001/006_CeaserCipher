@@ -3,7 +3,7 @@ package ceaser;
 
 public class CeaserCipher {
 	
-	private String alpha = "abcdefghijklmnopqrstuvwxyz";
+	private String alpha = "abcdefghijklmnopqrstuvwxyz ";
 
 	public String encode(String plainText, int key) {
 		
