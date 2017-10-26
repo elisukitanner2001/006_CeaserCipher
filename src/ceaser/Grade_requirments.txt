@@ -1,0 +1,22 @@
+Grade checkpoint #1: encoding
+
+1. JOP use jops you know
+2.executable jar
+3. JOP -ask do you want to encode decode or crack?
+-- Branch, right now we only have encode 
+4. for encoding -- ask for the plain text message message -- jop
+5. ask for the key --jop
+6. display the encoded message --jop
+7. loop - jop ask do you want to encode another message (Y/N) (trap errors)
+either go again, or a graceful exit -- jop
+
+
+
+Grade checkpoint #1: decoding
+
+use drop down jops here
+
+
+
+Grade checkpoint #1: cracking(don't know key)
+
