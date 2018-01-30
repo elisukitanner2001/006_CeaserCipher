@@ -1,22 +1,27 @@
 Grade checkpoint #1: encoding
-
-1. JOP use jops you know
+1. JOP use jops you know, plus the new drop down -- NO SCANNER NO SYSO
 2.executable jar
-3. JOP -ask do you want to encode decode or crack?
--- Branch, right now we only have encode 
+3. JOP drop down class example -ask do you want to encode decode or crack?
+-- use a switch case (class example )Branch, right now we only have encode 
 4. for encoding -- ask for the plain text message message -- jop
 5. ask for the key --jop
 6. display the encoded message --jop
-7. loop - jop ask do you want to encode another message (Y/N) (trap errors)
+7. loop -- back to the first drop down JOP
 either go again, or a graceful exit -- jop
 
 
 
-Grade checkpoint #1: decoding
+Grade checkpoint #2: decoding
+1. All JOPS
+2. Executable Jar
+3.No scanner/syso
+4. Select decode, you enter the coded message
+5. Enter the key
+6. program decodes, jop's the decoded msg
+7. how? When you encode you shift alpha to the right(add key); decode reverse that 
+--shift alpha to the left (subtract key)
 
-use drop down jops here
 
 
-
-Grade checkpoint #1: cracking(don't know key)
+Grade checkpoint #3: cracking(don't know key)
 
